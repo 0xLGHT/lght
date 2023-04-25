@@ -1,0 +1,59 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0 30px;
+  }
+  
+  header {
+    text-align: left;
+  }
+  
+  .gallery-title {
+    font-size: 69px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  
+  .header-line {
+    width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-bottom: 1%;
+  }
+  
+  .landscape {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .portrait {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .see-more a {
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+    padding-bottom: 2%;
+    font-weight: 500;
+  }
+
+  .see-more a:hover {
+    color: #888;
+  }
+
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: 1fr;
+      padding-bottom: 3%;
+    }
+  }
